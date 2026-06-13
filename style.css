@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Tiny5&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mynerve", cursive;
+}
+
+.container {
+    background-color: aquamarine;
+    min-height: 100vh;
+
+    min-width: 90vh;
+
+
+    margin: 20px 5vh
+}
+
+.header {
+    background-color: cadetblue;
+    height: 13vh;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.sidebar {
+    background-color: rgb(95, 116, 160);
+    height: 100vh;
+    width: 12%;
+    float: left;
+
+}
+
+.boxes {
+    background-color: rgb(160, 95, 146);
+    height: 98%;
+    width: 90%;
+    float: left;
+    margin: 10px;
+
+}
+
+.side-box {
+    background-color: rgb(95, 158, 160);
+    height: 13%;
+
+    max-width: 90%;
+    margin: 5%;
+    padding: 10%;
+
+
+    text-align: center;
+    font-size: 3vh;
+}
+
+.side-box:hover {
+    background-color: rgb(56, 86, 87);
+    color: white;
+    font-weight: bold;
+}
+
+.side-box-icon {
+    max-height: 90%;
+    max-width: 80%;
+    display: grid;
+    margin: 0 auto;
+}
+
+.side-box a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.content {
+    background-color: rgb(154, 95, 160);
+    height: 100vh;
+    width: 88%;
+    float: right;
+
+}
+
+.content-banner {
+    background-color: rgb(2, 46, 48);
+    background-image: url("https://slm-assets.secondlife.com/assets/16766271/lightbox/Grassy_Squares.jpg?1490765332");
+    background-size: auto 100%;
+    background-position: center;
+    height: 35%;
+    width: 100%;
+}
+
+.banner-left {
+
+    height: 100%;
+    width: 50%;
+    float: left;
+
+}
+
+.banner-dave-img {
+
+    height: 100%;
+    width: auto;
+    float: left;
+}
+
+.plantinha-img {
+
+    height: 20%;
+    margin-top: 28vh;
+    width: auto;
+    float: left;
+    transform: scaleX(-1);
+    /* isso é pra refletir a imagem, eu pesquisei*/
+}
+
+.banner-right {
+
+    height: 100%;
+    width: 50%;
+    float: left;
+    font-weight: bolder;
+    font-size: 5vh;
+    text-align: center;
+}
+
+.content-barra {
+    background-color: rgb(137, 160, 95);
+    height: 10%;
+    width: 100%;
+}
+
+.content-text {
+    background-color: rgb(160, 134, 95);
+    height: 55%;
+    width: 100%;
+}
