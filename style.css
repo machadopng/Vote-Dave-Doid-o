@@ -1,114 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Tiny5&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
-
-
-*{
-    font-family: "Inspiration", cursive;
-    font-weight: 300;
-
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Mynerve", cursive;
 }
 
-.conteiner{
-    width: 70%;
-    min-height: 53vh;
-    margin: 25vh auto;
+.container {
+    background-color: aquamarine;
+    min-height: 100vh;
+
+    min-width: 90vh;
+
+
+    margin: 20px 5vh
+}
+
+.header {
+    background-color: cadetblue;
+    height: 13vh;
+    width: 100%;
+    float: left;
     text-align: center;
+        background-image: url(https://compulsory-purple-m729evql.edgeone.dev/dwf.png);
+    background-repeat: inherit;
+    background-size: auto 100%;
+
 }
 
-img{
+
+.sidebar {
+    background-color: rgb(95, 116, 160);
+    height: 100vh;
+    width: 12%;
+    float: left;
+
+}
+
+.boxes {
+    background-color: rgb(160, 95, 146);
+    height: 98%;
+    width: 90%;
+    float: left;
+    margin: 10px;
+
+}
+
+.side-box {
+    background-color: rgb(95, 158, 160);
+    height: 13%;
+
+    max-width: 90%;
+    margin: 5%;
+    padding: 10%;
+
+
+    text-align: center;
+    font-size: 3vh;
+}
+
+.side-box:hover {
+    background-color: rgb(56, 86, 87);
+    color: white;
+    font-weight: bold;
+}
+
+.side-box-icon {
+    max-height: 90%;
+    max-width: 80%;
+    display: grid;
+    margin: 0 auto;
+}
+
+.side-box a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.content {
+    background-color: rgb(154, 95, 160);
+    height: 100vh;
+    width: 88%;
+    float: right;
+
+}
+
+.content-banner {
+    background-color: rgb(2, 46, 48);
+    background-image: url("https://slm-assets.secondlife.com/assets/16766271/lightbox/Grassy_Squares.jpg?1490765332");
+    background-size: auto 100%;
+    background-position: center;
+    height: 35%;
     width: 100%;
 }
 
-.img img-pequena{
-    display: none;
+.banner-left {
+
+    height: 100%;
+    width: 50%;
+    float: left;
+
 }
 
-.caixa{
-    width: 18%;
-    height: 120px;
-    margin: 1%;
+.banner-dave-img {
+
+    height: 100%;
+    width: 45%;
     float: left;
 }
 
-.caixa-1{
-    background-color: #ff4040;
+.fileira {
+    height: 100%;
+    width: 55%;
+    float: right;
+
+
 }
 
-.caixa-2{
-    background-color: #0066ff;
+.plantinha-img {
+
+    max-height: 30%;
+    margin-top: 4vh;
+    width: auto;
+    float: left;
+    transform: scaleX(-1);
+    /* isso é pra refletir a imagem, eu pesquisei*/
 }
 
-.caixa-3{
-    background-color: #1eff00;
+.banner-right {
+
+    height: 100%;
+    width: 50%;
+    float: left;
+    font-weight: bolder;
+    font-size: 5vh;
+    text-align: center;
 }
 
-.caixa-4{
-    background-color: #ff0095;
+.content-barra {
+    background-color: rgb(137, 160, 95);
+    height: 10%;
+    width: 100%;
 }
 
-.caixa-5{
-    background-color: #000000;
-}
-
-/* #MEDIA QUERIES */
-
-@media(max-width: 480px){
-    body{
-        background-color: green;
-        color: #ffffff;
-    }
-
-    .caixa{
-        width: 100%;
-    }
-}
-
-@media(min-width: 481px) and (max-width: 768px){
-    body{
-        background-color: yellow;
-        color: #000000;
-    }
-
-    .caixa{
-        width: 48%;
-        
-    }
-}
-
-@media(min-width: 769px) and (max-width: 992px){
-    body{
-        background-color: blue;
-        color: #ffffff;
-    }
-
-    .caixa{
-        width: 18%;
-        
-    }
-}
-
-@media(orientation: landscape){
-    body{
-        background-color: gold;
-        color: black;
-    }
-}
-
-@media print {
-    .conteiner-caixas{
-        display: none;
-    }
-}
-
-@media(max-width: 769px){
-    .img img-grande{
-        display: none;
-    }
-
-    .img img-pequena{
-        display: block;
-    }
+.content-text {
+    background-color: rgb(160, 134, 95);
+    height: 55%;
+    width: 100%;
 }
