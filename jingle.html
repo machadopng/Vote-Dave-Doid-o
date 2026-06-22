@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jingle - Partido Planta</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,101 +12,95 @@
 
     <div class="container">
 
-        <!--cabecalho trpinhax -->
         <div class="header">
-            <h1> Partido Planta </h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/500px-LEGO_logo.svg.png"
+                alt="logo do partido" class="logo_partido">
         </div>
 
-        <!-- menu tropax -->
-        <div class="sidebar">
+        <div class="main-wrapper">
 
-            <div class="boxes">
+            <div class="sidebar">
 
-                <div class="side-box">
-                    <img class="side-box-icon"
-                        src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
-                    <a href="index.html">Home</a>
-                </div>
+                <div class="boxes">
 
-                <div class="side-box">
-                    <img class="side-box-icon"
-                        src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
-                    <a href="historia.html">História</a>
-                </div>
+                    <div class="side-box">
+                        <img class="side-box-icon"
+                            src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
+                        <a href="index.html">Home</a>
+                    </div>
 
-                <div class="side-box">
-                    <img class="side-box-icon"
-                        src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
-                    <a href="propostas.html">Propostas</a>
-                </div>
+                    <div class="side-box">
+                        <img class="side-box-icon"
+                            src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
+                        <a href="historia.html">História</a>
+                    </div>
 
-                <div class="side-box">
-                    <img class="side-box-icon"
-                        src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
-                    <a href="agenda.html">Agenda</a>
-                </div>
+                    <div class="side-box">
+                        <img class="side-box-icon"
+                            src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
+                        <a href="propostas.html">Propostas</a>
+                    </div>
 
-                <div class="side-box">
-                    <img class="side-box-icon"
-                        src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
-                    <a href="album.html">Álbum</a>
-                </div>
+                    <div class="side-box">
+                        <img class="side-box-icon"
+                            src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
+                        <a href="agenda.html">Agenda</a>
+                    </div>
 
-                <div class="side-box">
-                    <img class="side-box-icon"
-                        src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
-                    <a href="jingle.html">Jingle</a>
-                </div>
+                    <div class="side-box">
+                        <img class="side-box-icon"
+                            src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
+                        <a href="album.html">Álbum</a>
+                    </div>
 
-                <div class="side-box">
-                    <img class="side-box-icon"
-                        src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
-                    <a href="contato.html">Contato</a>
+                    <div class="side-box">
+                        <img class="side-box-icon"
+                            src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
+                        <a href="jingle.html">Jingle</a>
+                    </div>
+
+                    <div class="side-box">
+                        <img class="side-box-icon"
+                            src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
+                        <a href="contato.html">Contato</a>
+                    </div>
+
                 </div>
 
             </div>
 
-        </div>
+            <div class="content">
 
-        <!--conteudinho ne tropax-->
-        <div class="content">
+                <div class="jingle-container">
 
-            <div class="jingle-container">
+                    <img id="vinil"
+                        src="https://png.pngtree.com/png-clipart/20230303/ourmid/pngtree-vinyl-records-png-image_6629914.png"
+                        alt="Vinil">
 
-                <img id="vinil"
-                    src="https://s10.aconvert.com/convert/p3r68-cdx67/atn9f-9vuz7.png"
-                    alt="Vinil">
+                    <div class="player-box">
 
-                <div class="player-box">
+                        <div class="player-title">
+                            Eu voto no Morcegão!
+                        </div>
 
-                    <div class="player-title">
-                        Eu voto no plantão!
-                    </div>
+                        <audio id="audio">
+                            <source src="audio/jingle.mp3" type="audio/mpeg">
+                        </audio>
 
-                    <audio id="audio">
-                        <source src="audio/jingle.mp3" type="audio/mpeg">
-                    </audio>
+                        <input type="range" id="progresso" value="0">
 
-                    <input type="range" id="progresso" value="0">
+                        <div class="tempo">
+                            <span id="atual">0:00</span> /
+                            <span id="duracao">0:00</span>
+                        </div>
 
-                    <div class="tempo">
-                        <span id="atual">0:00</span> /
-                        <span id="duracao">0:00</span>
-                    </div>
+                        <div class="controls">
 
-                    <div class="controls">
+                            <button onclick="voltar()" class="btn-player">⏮</button>
+                            <button onclick="playPause()" class="btn-player">▶</button>
+                            <button onclick="avancar()" class="btn-player">⏭</button>
 
-                        <button onclick="voltar()" class="btn-player">
-                            ⏮
-                        </button>
-
-                        <button onclick="playPause()" class="btn-player">
-                            ▶︎
-                        </button>
-
-                        <button onclick="avancar()" class="btn-player">
-                            ⏭
-                        </button>
+                        </div>
 
                     </div>
 
@@ -120,7 +113,6 @@
     </div>
 
     <script>
-
         const audio = document.getElementById("audio");
         const vinil = document.getElementById("vinil");
 
@@ -129,31 +121,24 @@
         const duracao = document.getElementById("duracao");
 
         function playPause() {
-
             if (audio.paused) {
-
                 audio.play();
                 vinil.classList.add("girando");
-
             } else {
-
                 audio.pause();
                 vinil.classList.remove("girando");
             }
         }
 
         function voltar() {
-
             audio.currentTime = 0;
         }
 
         function avancar() {
-
             audio.currentTime += 10;
         }
 
-        audio.addEventListener("loadedmetadata", function () {
-
+        audio.addEventListener("loadedmetadata", () => {
             progresso.max = audio.duration;
 
             let min = Math.floor(audio.duration / 60);
@@ -163,7 +148,7 @@
                 `${min}:${seg.toString().padStart(2, "0")}`;
         });
 
-        audio.addEventListener("timeupdate", function () {
+        audio.addEventListener("timeupdate", () => {
 
             progresso.value = audio.currentTime;
 
@@ -174,16 +159,13 @@
                 `${min}:${seg.toString().padStart(2, "0")}`;
         });
 
-        progresso.addEventListener("input", function () {
-
+        progresso.addEventListener("input", () => {
             audio.currentTime = progresso.value;
         });
 
-        audio.addEventListener("ended", function () {
-
+        audio.addEventListener("ended", () => {
             vinil.classList.remove("girando");
         });
-
     </script>
 
 </body>
