@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Tiny5&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Fira+Code:wght@300..700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Mynerve", cursive;
+    font-family: "Bangers", cursive;
 }
 
 body{
@@ -234,6 +233,49 @@ body{
 .btn-player:hover{
     transform: scale(1.1);
     background-color: rgb(255, 255, 255);
+}
+
+.letra-box{
+    width:420px;
+    max-width:95%;
+    margin-top:20px;
+}
+
+.letra-box summary{
+    background:white;
+    color:black;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    text-align:center;
+
+    font-size:22px;
+
+    list-style:none;
+}
+
+.letra-box summary::-webkit-details-marker{
+    display:none;
+}
+
+.letra-conteudo{
+    background:white;
+
+    color:black;
+
+    padding:20px;
+
+    margin-top:10px;
+
+    border-radius:8px;
+
+    text-align:center;
+
+    line-height:1.6;
 }
 
 .girando{
